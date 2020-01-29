@@ -1,9 +1,18 @@
+" Personal Preferences on vim
+
 syntax on
 set number
 set laststatus=2
 set noshowmode
 
-"Plugins
+" vim-plug installation
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Plugins
 call plug#begin()
 
         Plug 'sainnhe/edge'
@@ -11,10 +20,11 @@ call plug#begin()
 
 call plug#end()
 
-"Edge Theme
+" Edge Theme
 set termguicolors
 set background=dark
 colorscheme edge
-"Lightline Theme
+
+" Lightline Theme
 let g:lightline = {}
 let g:lightline.colorscheme = 'edge'
