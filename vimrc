@@ -17,6 +17,7 @@ call plug#begin()
 
         Plug 'sainnhe/edge'
         Plug 'itchyny/lightline.vim'
+        Plug 'arcticicestudio/nord-vim
 
 call plug#end()
 
