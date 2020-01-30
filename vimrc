@@ -17,7 +17,7 @@ call plug#begin()
 
         Plug 'sainnhe/edge'
         Plug 'itchyny/lightline.vim'
-        Plug 'arcticicestudio/nord-vim
+        Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
@@ -26,6 +26,6 @@ set termguicolors
 set background=dark
 colorscheme edge
 
-" Lightline Theme
+" Lightline Statusbar
 let g:lightline = {}
 let g:lightline.colorscheme = 'edge'
